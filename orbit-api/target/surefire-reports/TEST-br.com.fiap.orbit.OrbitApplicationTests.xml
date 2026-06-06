@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.fiap.orbit.OrbitApplicationTests" time="3.095" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/riquezada/Desktop/OBITS/orbit-api/target/test-classes:/Users/riquezada/Desktop/OBITS/orbit-api/target/classes:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.5/spring-boot-starter-web-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.5/spring-boot-starter-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.5/spring-boot-starter-logging-3.3.5.jar:/Users/riquezada/.m2/repository/ch/qos/logback/logback-classic/1.5.11/logback-classic-1.5.11.jar:/Users/riquezada/.m2/repository/ch/qos/logback/logback-core/1.5.11/logback-core-1.5.11.jar:/Users/riquezada/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/riquezada/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/riquezada/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/riquezada/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/riquezada/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.5/spring-boot-starter-json-3.3.5.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.2/jackson-datatype-jdk8-2.17.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.2/jackson-module-parameter-names-2.17.2.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.5/spring-boot-starter-tomcat-3.3.5.jar:/Users/riquezada/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar:/Users/riquezada/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.31/tomcat-embed-websocket-10.1.31.jar:/Users/riquezada/.m2/repository/org/springframework/spring-web/6.1.14/spring-web-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-beans/6.1.14/spring-beans-6.1.14.jar:/Users/riquezada/.m2/repository/io/micrometer/micrometer-observation/1.13.6/micrometer-observation-1.13.6.jar:/Users/riquezada/.m2/repository/io/micrometer/micrometer-commons/1.13.6/micrometer-commons-1.13.6.jar:/Users/riquezada/.m2/repository/org/springframework/spring-webmvc/6.1.14/spring-webmvc-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-context/6.1.14/spring-context-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-expression/6.1.14/spring-expression-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.3.5/spring-boot-starter-data-jpa-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.3.5/spring-boot-starter-aop-3.3.5.jar:/Users/riquezada/.m2/repository/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.3.5/spring-boot-starter-jdbc-3.3.5.jar:/Users/riquezada/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/riquezada/.m2/repository/org/springframework/spring-jdbc/6.1.14/spring-jdbc-6.1.14.jar:/Users/riquezada/.m2/repository/org/hibernate/orm/hibernate-core/6.5.3.Final/hibernate-core-6.5.3.Final.jar:/Users/riquezada/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/riquezada/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/riquezada/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/riquezada/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/riquezada/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/riquezada/.m2/repository/net/bytebuddy/byte-buddy/1.14.19/byte-buddy-1.14.19.jar:/Users/riquezada/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/riquezada/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/riquezada/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/riquezada/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/riquezada/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/riquezada/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/riquezada/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/riquezada/.m2/repository/org/springframework/data/spring-data-jpa/3.3.5/spring-data-jpa-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/data/spring-data-commons/3.3.5/spring-data-commons-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/spring-orm/6.1.14/spring-orm-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-tx/6.1.14/spring-tx-6.1.14.jar:/Users/riquezada/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/riquezada/.m2/repository/org/springframework/spring-aspects/6.1.14/spring-aspects-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.3.5/spring-boot-starter-security-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/spring-aop/6.1.14/spring-aop-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-config/6.3.4/spring-security-config-6.3.4.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-web/6.3.4/spring-security-web-6.3.4.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.5/spring-boot-starter-validation-3.3.5.jar:/Users/riquezada/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.31/tomcat-embed-el-10.1.31.jar:/Users/riquezada/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/riquezada/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-hateoas/3.3.5/spring-boot-starter-hateoas-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/hateoas/spring-hateoas/2.3.3/spring-hateoas-2.3.3.jar:/Users/riquezada/.m2/repository/org/springframework/plugin/spring-plugin-core/3.0.0/spring-plugin-core-3.0.0.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-devtools/3.3.5/spring-boot-devtools-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot/3.3.5/spring-boot-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.5/spring-boot-autoconfigure-3.3.5.jar:/Users/riquezada/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.4.0.24.05/ojdbc11-23.4.0.24.05.jar:/Users/riquezada/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/riquezada/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.6/jjwt-api-0.12.6.jar:/Users/riquezada/.m2/repository/io/jsonwebtoken/jjwt-impl/0.12.6/jjwt-impl-0.12.6.jar:/Users/riquezada/.m2/repository/io/jsonwebtoken/jjwt-jackson/0.12.6/jjwt-jackson-0.12.6.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/riquezada/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.6.0/springdoc-openapi-starter-webmvc-ui-2.6.0.jar:/Users/riquezada/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.6.0/springdoc-openapi-starter-webmvc-api-2.6.0.jar:/Users/riquezada/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.6.0/springdoc-openapi-starter-common-2.6.0.jar:/Users/riquezada/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.22/swagger-core-jakarta-2.2.22.jar:/Users/riquezada/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/riquezada/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.22/swagger-annotations-jakarta-2.2.22.jar:/Users/riquezada/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.22/swagger-models-jakarta-2.2.22.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.17.2/jackson-dataformat-yaml-2.17.2.jar:/Users/riquezada/.m2/repository/org/webjars/swagger-ui/5.17.14/swagger-ui-5.17.14.jar:/Users/riquezada/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.5/spring-boot-starter-test-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-test/3.3.5/spring-boot-test-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.5/spring-boot-test-autoconfigure-3.3.5.jar:/Users/riquezada/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/riquezada/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/riquezada/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/riquezada/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/riquezada/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/riquezada/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/riquezada/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/riquezada/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/riquezada/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/riquezada/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.5/junit-jupiter-5.10.5.jar:/Users/riquezada/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.5/junit-jupiter-api-5.10.5.jar:/Users/riquezada/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/riquezada/.m2/repository/org/junit/platform/junit-platform-commons/1.10.5/junit-platform-commons-1.10.5.jar:/Users/riquezada/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/riquezada/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.5/junit-jupiter-params-5.10.5.jar:/Users/riquezada/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.5/junit-jupiter-engine-5.10.5.jar:/Users/riquezada/.m2/repository/org/junit/platform/junit-platform-engine/1.10.5/junit-platform-engine-1.10.5.jar:/Users/riquezada/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/riquezada/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar:/Users/riquezada/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/riquezada/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/riquezada/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/riquezada/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/riquezada/.m2/repository/org/springframework/spring-core/6.1.14/spring-core-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-jcl/6.1.14/spring-jcl-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-test/6.1.14/spring-test-6.1.14.jar:/Users/riquezada/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-test/6.3.4/spring-security-test-6.3.4.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-crypto/6.3.4/spring-security-crypto-6.3.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="/Users/riquezada/Library/Java/JavaVirtualMachines/openjdk-24.0.1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/riquezada/Desktop/OBITS/orbit-api/target/surefire/surefirebooter-20260605223054126_3.jar /Users/riquezada/Desktop/OBITS/orbit-api/target/surefire 2026-06-05T22-30-54_080-jvmRun1 surefire-20260605223054126_1tmp surefire_0-20260605223054126_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/riquezada/Desktop/OBITS/orbit-api/target/test-classes:/Users/riquezada/Desktop/OBITS/orbit-api/target/classes:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.3.5/spring-boot-starter-web-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.5/spring-boot-starter-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.5/spring-boot-starter-logging-3.3.5.jar:/Users/riquezada/.m2/repository/ch/qos/logback/logback-classic/1.5.11/logback-classic-1.5.11.jar:/Users/riquezada/.m2/repository/ch/qos/logback/logback-core/1.5.11/logback-core-1.5.11.jar:/Users/riquezada/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/riquezada/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/riquezada/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/riquezada/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/riquezada/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.5/spring-boot-starter-json-3.3.5.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.2/jackson-datatype-jdk8-2.17.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.2/jackson-module-parameter-names-2.17.2.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.3.5/spring-boot-starter-tomcat-3.3.5.jar:/Users/riquezada/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar:/Users/riquezada/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.31/tomcat-embed-websocket-10.1.31.jar:/Users/riquezada/.m2/repository/org/springframework/spring-web/6.1.14/spring-web-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-beans/6.1.14/spring-beans-6.1.14.jar:/Users/riquezada/.m2/repository/io/micrometer/micrometer-observation/1.13.6/micrometer-observation-1.13.6.jar:/Users/riquezada/.m2/repository/io/micrometer/micrometer-commons/1.13.6/micrometer-commons-1.13.6.jar:/Users/riquezada/.m2/repository/org/springframework/spring-webmvc/6.1.14/spring-webmvc-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-context/6.1.14/spring-context-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-expression/6.1.14/spring-expression-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.3.5/spring-boot-starter-data-jpa-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.3.5/spring-boot-starter-aop-3.3.5.jar:/Users/riquezada/.m2/repository/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.3.5/spring-boot-starter-jdbc-3.3.5.jar:/Users/riquezada/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/Users/riquezada/.m2/repository/org/springframework/spring-jdbc/6.1.14/spring-jdbc-6.1.14.jar:/Users/riquezada/.m2/repository/org/hibernate/orm/hibernate-core/6.5.3.Final/hibernate-core-6.5.3.Final.jar:/Users/riquezada/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/riquezada/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/riquezada/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/riquezada/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/riquezada/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/riquezada/.m2/repository/net/bytebuddy/byte-buddy/1.14.19/byte-buddy-1.14.19.jar:/Users/riquezada/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/riquezada/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/riquezada/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/riquezada/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/riquezada/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/riquezada/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/riquezada/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/riquezada/.m2/repository/org/springframework/data/spring-data-jpa/3.3.5/spring-data-jpa-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/data/spring-data-commons/3.3.5/spring-data-commons-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/spring-orm/6.1.14/spring-orm-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-tx/6.1.14/spring-tx-6.1.14.jar:/Users/riquezada/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/riquezada/.m2/repository/org/springframework/spring-aspects/6.1.14/spring-aspects-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.3.5/spring-boot-starter-security-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/spring-aop/6.1.14/spring-aop-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-config/6.3.4/spring-security-config-6.3.4.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-web/6.3.4/spring-security-web-6.3.4.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.5/spring-boot-starter-validation-3.3.5.jar:/Users/riquezada/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.31/tomcat-embed-el-10.1.31.jar:/Users/riquezada/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/riquezada/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-hateoas/3.3.5/spring-boot-starter-hateoas-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/hateoas/spring-hateoas/2.3.3/spring-hateoas-2.3.3.jar:/Users/riquezada/.m2/repository/org/springframework/plugin/spring-plugin-core/3.0.0/spring-plugin-core-3.0.0.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-devtools/3.3.5/spring-boot-devtools-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot/3.3.5/spring-boot-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.5/spring-boot-autoconfigure-3.3.5.jar:/Users/riquezada/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.4.0.24.05/ojdbc11-23.4.0.24.05.jar:/Users/riquezada/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/riquezada/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.6/jjwt-api-0.12.6.jar:/Users/riquezada/.m2/repository/io/jsonwebtoken/jjwt-impl/0.12.6/jjwt-impl-0.12.6.jar:/Users/riquezada/.m2/repository/io/jsonwebtoken/jjwt-jackson/0.12.6/jjwt-jackson-0.12.6.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/riquezada/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.6.0/springdoc-openapi-starter-webmvc-ui-2.6.0.jar:/Users/riquezada/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.6.0/springdoc-openapi-starter-webmvc-api-2.6.0.jar:/Users/riquezada/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.6.0/springdoc-openapi-starter-common-2.6.0.jar:/Users/riquezada/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.22/swagger-core-jakarta-2.2.22.jar:/Users/riquezada/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/riquezada/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.22/swagger-annotations-jakarta-2.2.22.jar:/Users/riquezada/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.22/swagger-models-jakarta-2.2.22.jar:/Users/riquezada/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.17.2/jackson-dataformat-yaml-2.17.2.jar:/Users/riquezada/.m2/repository/org/webjars/swagger-ui/5.17.14/swagger-ui-5.17.14.jar:/Users/riquezada/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.5/spring-boot-starter-test-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-test/3.3.5/spring-boot-test-3.3.5.jar:/Users/riquezada/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.5/spring-boot-test-autoconfigure-3.3.5.jar:/Users/riquezada/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/riquezada/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/riquezada/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/riquezada/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/riquezada/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/riquezada/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/riquezada/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/riquezada/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/riquezada/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/riquezada/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.5/junit-jupiter-5.10.5.jar:/Users/riquezada/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.5/junit-jupiter-api-5.10.5.jar:/Users/riquezada/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/riquezada/.m2/repository/org/junit/platform/junit-platform-commons/1.10.5/junit-platform-commons-1.10.5.jar:/Users/riquezada/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/riquezada/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.5/junit-jupiter-params-5.10.5.jar:/Users/riquezada/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.5/junit-jupiter-engine-5.10.5.jar:/Users/riquezada/.m2/repository/org/junit/platform/junit-platform-engine/1.10.5/junit-platform-engine-1.10.5.jar:/Users/riquezada/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/riquezada/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar:/Users/riquezada/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/riquezada/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/riquezada/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/riquezada/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/riquezada/.m2/repository/org/springframework/spring-core/6.1.14/spring-core-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-jcl/6.1.14/spring-jcl-6.1.14.jar:/Users/riquezada/.m2/repository/org/springframework/spring-test/6.1.14/spring-test-6.1.14.jar:/Users/riquezada/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-test/6.3.4/spring-security-test-6.3.4.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-core/6.3.4/spring-security-core-6.3.4.jar:/Users/riquezada/.m2/repository/org/springframework/security/spring-security-crypto/6.3.4/spring-security-crypto-6.3.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/riquezada"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/Users/riquezada/Library/Java/JavaVirtualMachines/openjdk-24.0.1/Contents/Home"/>
+    <property name="spring.profiles.active" value="dev"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/riquezada/Desktop/OBITS/orbit-api"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/riquezada/Desktop/OBITS/orbit-api/target/surefire/surefirebooter-20260605223054126_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="riquezada"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/riquezada/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/xj/cwkq1zps19z51_3_n2jlz75h0000gn/T/"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="/Users/riquezada/Desktop/OBITS/orbit-api"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="89443"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/riquezada/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="listarMissoesRetornaResultados" classname="br.com.fiap.orbit.OrbitApplicationTests" time="0.275">
+    <system-out><![CDATA[22:30:54.504 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.fiap.orbit.OrbitApplicationTests]: OrbitApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:30:54.555 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.fiap.orbit.OrbitApplication for test class br.com.fiap.orbit.OrbitApplicationTests
+22:30:54.632 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-06-05T22:30:54.730-03:00  INFO 89443 --- [           main] b.com.fiap.orbit.OrbitApplicationTests   : Starting OrbitApplicationTests using Java 24.0.1 with PID 89443 (started by riquezada in /Users/riquezada/Desktop/OBITS/orbit-api)
+2026-06-05T22:30:54.730-03:00 DEBUG 89443 --- [           main] b.com.fiap.orbit.OrbitApplicationTests   : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-05T22:30:54.730-03:00  INFO 89443 --- [           main] b.com.fiap.orbit.OrbitApplicationTests   : The following 1 profile is active: "dev"
+2026-06-05T22:30:55.113-03:00  INFO 89443 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05T22:30:55.143-03:00  INFO 89443 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 7 JPA repository interfaces.
+2026-06-05T22:30:55.344-03:00  INFO 89443 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-05T22:30:55.378-03:00  INFO 89443 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-05T22:30:55.393-03:00  INFO 89443 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-05T22:30:55.528-03:00  INFO 89443 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05T22:30:55.541-03:00  INFO 89443 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-05T22:30:55.692-03:00  INFO 89443 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:orbitdb user=SA
+2026-06-05T22:30:55.693-03:00  INFO 89443 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-05T22:30:55.705-03:00  WARN 89443 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-05T22:30:55.794-03:00  WARN 89443 --- [           main] o.h.boot.model.internal.EntityBinder     : HHH000457: Joined inheritance hierarchy [br.com.fiap.orbit.model.Veiculo] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2026-06-05T22:30:56.185-03:00  INFO 89443 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05T22:30:56.190-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_missao cascade 
+Hibernate: 
+    drop table if exists tb_orbit_missao cascade 
+2026-06-05T22:30:56.192-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_missao_recurso cascade 
+Hibernate: 
+    drop table if exists tb_orbit_missao_recurso cascade 
+2026-06-05T22:30:56.192-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_pessoa cascade 
+Hibernate: 
+    drop table if exists tb_orbit_pessoa cascade 
+2026-06-05T22:30:56.192-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_ponto_apoio cascade 
+Hibernate: 
+    drop table if exists tb_orbit_ponto_apoio cascade 
+2026-06-05T22:30:56.192-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_recurso cascade 
+Hibernate: 
+    drop table if exists tb_orbit_recurso cascade 
+2026-06-05T22:30:56.192-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_usuario cascade 
+Hibernate: 
+    drop table if exists tb_orbit_usuario cascade 
+2026-06-05T22:30:56.192-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_veiculo cascade 
+Hibernate: 
+    drop table if exists tb_orbit_veiculo cascade 
+2026-06-05T22:30:56.192-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_veiculo_aereo cascade 
+Hibernate: 
+    drop table if exists tb_orbit_veiculo_aereo cascade 
+2026-06-05T22:30:56.192-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists tb_orbit_veiculo_terrestre cascade 
+Hibernate: 
+    drop table if exists tb_orbit_veiculo_terrestre cascade 
+2026-06-05T22:30:56.193-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists seq_orbit_missao
+Hibernate: 
+    drop sequence if exists seq_orbit_missao
+2026-06-05T22:30:56.193-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists seq_orbit_pessoa
+Hibernate: 
+    drop sequence if exists seq_orbit_pessoa
+2026-06-05T22:30:56.193-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists seq_orbit_ponto
+Hibernate: 
+    drop sequence if exists seq_orbit_ponto
+2026-06-05T22:30:56.193-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists seq_orbit_recurso
+Hibernate: 
+    drop sequence if exists seq_orbit_recurso
+2026-06-05T22:30:56.193-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists seq_orbit_usuario
+Hibernate: 
+    drop sequence if exists seq_orbit_usuario
+2026-06-05T22:30:56.193-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists seq_orbit_veiculo
+Hibernate: 
+    drop sequence if exists seq_orbit_veiculo
+2026-06-05T22:30:56.195-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create sequence seq_orbit_missao start with 1 increment by 1
+Hibernate: 
+    create sequence seq_orbit_missao start with 1 increment by 1
+2026-06-05T22:30:56.196-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create sequence seq_orbit_pessoa start with 1 increment by 1
+Hibernate: 
+    create sequence seq_orbit_pessoa start with 1 increment by 1
+2026-06-05T22:30:56.196-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create sequence seq_orbit_ponto start with 1 increment by 1
+Hibernate: 
+    create sequence seq_orbit_ponto start with 1 increment by 1
+2026-06-05T22:30:56.196-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create sequence seq_orbit_recurso start with 1 increment by 1
+Hibernate: 
+    create sequence seq_orbit_recurso start with 1 increment by 1
+2026-06-05T22:30:56.196-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create sequence seq_orbit_usuario start with 1 increment by 1
+Hibernate: 
+    create sequence seq_orbit_usuario start with 1 increment by 1
+2026-06-05T22:30:56.196-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create sequence seq_orbit_veiculo start with 1 increment by 1
+Hibernate: 
+    create sequence seq_orbit_veiculo start with 1 increment by 1
+2026-06-05T22:30:56.198-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_missao (
+        nivel_risco float(53) not null,
+        origem_latitude float(53) not null,
+        origem_longitude float(53) not null,
+        data_fim timestamp(6),
+        data_inicio timestamp(6),
+        id bigint not null,
+        veiculo_id bigint,
+        descricao varchar(2000),
+        titulo varchar(255) not null,
+        status enum ('ABORTADA','CONCLUIDA','CRITICA','EM_ANDAMENTO','PLANEJAMENTO') not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tb_orbit_missao (
+        nivel_risco float(53) not null,
+        origem_latitude float(53) not null,
+        origem_longitude float(53) not null,
+        data_fim timestamp(6),
+        data_inicio timestamp(6),
+        id bigint not null,
+        veiculo_id bigint,
+        descricao varchar(2000),
+        titulo varchar(255) not null,
+        status enum ('ABORTADA','CONCLUIDA','CRITICA','EM_ANDAMENTO','PLANEJAMENTO') not null,
+        primary key (id)
+    )
+2026-06-05T22:30:56.200-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_missao_recurso (
+        quantidade_consumida float(53),
+        data_consumo timestamp(6),
+        missao_id bigint not null,
+        recurso_id bigint not null,
+        primary key (missao_id, recurso_id)
+    )
+Hibernate: 
+    create table tb_orbit_missao_recurso (
+        quantidade_consumida float(53),
+        data_consumo timestamp(6),
+        missao_id bigint not null,
+        recurso_id bigint not null,
+        primary key (missao_id, recurso_id)
+    )
+2026-06-05T22:30:56.201-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_pessoa (
+        nivel_condicao_fisica integer not null,
+        nivel_habilidade integer not null,
+        id bigint not null,
+        missao_id bigint,
+        funcao varchar(255),
+        matricula varchar(255) unique,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tb_orbit_pessoa (
+        nivel_condicao_fisica integer not null,
+        nivel_habilidade integer not null,
+        id bigint not null,
+        missao_id bigint,
+        funcao varchar(255),
+        matricula varchar(255) unique,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+2026-06-05T22:30:56.202-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_ponto_apoio (
+        ativo boolean not null,
+        capacidade_atendimento integer,
+        latitude float(53) not null,
+        longitude float(53) not null,
+        id bigint not null,
+        descricao varchar(2000),
+        nome varchar(255) not null,
+        tipo enum ('BASE_ESPACIAL','BASE_TERRESTRE','ESTACAO_REMOTA','HUB_LOGISTICO','HUB_ORBITAL') not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tb_orbit_ponto_apoio (
+        ativo boolean not null,
+        capacidade_atendimento integer,
+        latitude float(53) not null,
+        longitude float(53) not null,
+        id bigint not null,
+        descricao varchar(2000),
+        nome varchar(255) not null,
+        tipo enum ('BASE_ESPACIAL','BASE_TERRESTRE','ESTACAO_REMOTA','HUB_LOGISTICO','HUB_ORBITAL') not null,
+        primary key (id)
+    )
+2026-06-05T22:30:56.203-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_recurso (
+        quantidade float(53) not null,
+        id bigint not null,
+        ponto_apoio_id bigint not null,
+        descricao varchar(1000),
+        nome varchar(255) not null,
+        unidade varchar(255) not null,
+        tipo enum ('COMBUSTIVEL','COMUNICACAO','ENERGIA','EQUIPAMENTO_MEDICO','FERRAMENTA','SUPRIMENTO') not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tb_orbit_recurso (
+        quantidade float(53) not null,
+        id bigint not null,
+        ponto_apoio_id bigint not null,
+        descricao varchar(1000),
+        nome varchar(255) not null,
+        unidade varchar(255) not null,
+        tipo enum ('COMBUSTIVEL','COMUNICACAO','ENERGIA','EQUIPAMENTO_MEDICO','FERRAMENTA','SUPRIMENTO') not null,
+        primary key (id)
+    )
+2026-06-05T22:30:56.203-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_usuario (
+        id bigint not null,
+        email varchar(255) not null unique,
+        nome varchar(255) not null,
+        role varchar(255) not null,
+        senha varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tb_orbit_usuario (
+        id bigint not null,
+        email varchar(255) not null unique,
+        nome varchar(255) not null,
+        role varchar(255) not null,
+        senha varchar(255) not null,
+        primary key (id)
+    )
+2026-06-05T22:30:56.204-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_veiculo (
+        ativo boolean not null,
+        autonomia_km float(53) not null,
+        capacidade_carga float(53),
+        nivel_combustivel float(53) not null,
+        id bigint not null,
+        dtype varchar(20) not null,
+        modelo varchar(255) not null,
+        nome varchar(255) not null,
+        tipo enum ('AEREO','ESPACIAL','TERRESTRE') not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tb_orbit_veiculo (
+        ativo boolean not null,
+        autonomia_km float(53) not null,
+        capacidade_carga float(53),
+        nivel_combustivel float(53) not null,
+        id bigint not null,
+        dtype varchar(20) not null,
+        modelo varchar(255) not null,
+        nome varchar(255) not null,
+        tipo enum ('AEREO','ESPACIAL','TERRESTRE') not null,
+        primary key (id)
+    )
+2026-06-05T22:30:56.204-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_veiculo_aereo (
+        alcance_vertical float(53),
+        capacidade_passageiros integer,
+        id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table tb_orbit_veiculo_aereo (
+        alcance_vertical float(53),
+        capacidade_passageiros integer,
+        id bigint not null,
+        primary key (id)
+    )
+2026-06-05T22:30:56.205-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    create table tb_orbit_veiculo_terrestre (
+        altura_maxima float(53),
+        id bigint not null,
+        tipo_tracao varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table tb_orbit_veiculo_terrestre (
+        altura_maxima float(53),
+        id bigint not null,
+        tipo_tracao varchar(255),
+        primary key (id)
+    )
+2026-06-05T22:30:56.205-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists tb_orbit_missao 
+       add constraint FK1ifu93sthtu23jkrk13wjmsbg 
+       foreign key (veiculo_id) 
+       references tb_orbit_veiculo
+Hibernate: 
+    alter table if exists tb_orbit_missao 
+       add constraint FK1ifu93sthtu23jkrk13wjmsbg 
+       foreign key (veiculo_id) 
+       references tb_orbit_veiculo
+2026-06-05T22:30:56.210-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists tb_orbit_missao_recurso 
+       add constraint FKn1qlrlsqiitwbq36f60kmqj10 
+       foreign key (missao_id) 
+       references tb_orbit_missao
+Hibernate: 
+    alter table if exists tb_orbit_missao_recurso 
+       add constraint FKn1qlrlsqiitwbq36f60kmqj10 
+       foreign key (missao_id) 
+       references tb_orbit_missao
+2026-06-05T22:30:56.211-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists tb_orbit_missao_recurso 
+       add constraint FKn12fudnvlv4fq2xc0msql8twl 
+       foreign key (recurso_id) 
+       references tb_orbit_recurso
+Hibernate: 
+    alter table if exists tb_orbit_missao_recurso 
+       add constraint FKn12fudnvlv4fq2xc0msql8twl 
+       foreign key (recurso_id) 
+       references tb_orbit_recurso
+2026-06-05T22:30:56.211-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists tb_orbit_pessoa 
+       add constraint FKijfeh8bks8c7lfcgj9nr7e4ji 
+       foreign key (missao_id) 
+       references tb_orbit_missao
+Hibernate: 
+    alter table if exists tb_orbit_pessoa 
+       add constraint FKijfeh8bks8c7lfcgj9nr7e4ji 
+       foreign key (missao_id) 
+       references tb_orbit_missao
+2026-06-05T22:30:56.213-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists tb_orbit_recurso 
+       add constraint FKckbjnrtu4i9nr4jhkbdl24hdv 
+       foreign key (ponto_apoio_id) 
+       references tb_orbit_ponto_apoio
+Hibernate: 
+    alter table if exists tb_orbit_recurso 
+       add constraint FKckbjnrtu4i9nr4jhkbdl24hdv 
+       foreign key (ponto_apoio_id) 
+       references tb_orbit_ponto_apoio
+2026-06-05T22:30:56.214-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists tb_orbit_veiculo_aereo 
+       add constraint FKieqv07hv6jn1qq3kqwog6hqk3 
+       foreign key (id) 
+       references tb_orbit_veiculo
+Hibernate: 
+    alter table if exists tb_orbit_veiculo_aereo 
+       add constraint FKieqv07hv6jn1qq3kqwog6hqk3 
+       foreign key (id) 
+       references tb_orbit_veiculo
+2026-06-05T22:30:56.214-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists tb_orbit_veiculo_terrestre 
+       add constraint FK4jobrnrhfrrnkn06617f1xd5a 
+       foreign key (id) 
+       references tb_orbit_veiculo
+Hibernate: 
+    alter table if exists tb_orbit_veiculo_terrestre 
+       add constraint FK4jobrnrhfrrnkn06617f1xd5a 
+       foreign key (id) 
+       references tb_orbit_veiculo
+2026-06-05T22:30:56.216-03:00  INFO 89443 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T22:30:56.363-03:00  INFO 89443 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05T22:30:56.577-03:00  INFO 89443 --- [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-06-05T22:30:56.578-03:00  WARN 89443 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-05T22:30:56.655-03:00  WARN 89443 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05T22:30:56.939-03:00  INFO 89443 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:orbitdb'
+2026-06-05T22:30:56.971-03:00  INFO 89443 --- [           main] b.com.fiap.orbit.OrbitApplicationTests   : Started OrbitApplicationTests in 2.344 seconds (process running for 2.81)
+2026-06-05T22:30:57.009-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        tb_orbit_usuario u1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        tb_orbit_usuario u1_0
+2026-06-05T22:30:57.018-03:00  INFO 89443 --- [           main] br.com.fiap.orbit.DataInitializer        : Inicializando dados de exemplo ORBIT...
+2026-06-05T22:30:57.121-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_usuario
+Hibernate: 
+    select
+        next value for seq_orbit_usuario
+2026-06-05T22:30:57.133-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_usuario
+        (email, nome, role, senha, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_usuario
+        (email, nome, role, senha, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-06-05T22:30:57.222-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_usuario
+Hibernate: 
+    select
+        next value for seq_orbit_usuario
+2026-06-05T22:30:57.222-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_usuario
+        (email, nome, role, senha, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_usuario
+        (email, nome, role, senha, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-06-05T22:30:57.223-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_veiculo
+Hibernate: 
+    select
+        next value for seq_orbit_veiculo
+2026-06-05T22:30:57.225-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_veiculo
+        (ativo, autonomia_km, capacidade_carga, modelo, nivel_combustivel, nome, tipo, dtype, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'TERRESTRE', ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_veiculo
+        (ativo, autonomia_km, capacidade_carga, modelo, nivel_combustivel, nome, tipo, dtype, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'TERRESTRE', ?)
+2026-06-05T22:30:57.225-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_veiculo_terrestre
+        (altura_maxima, tipo_tracao, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_veiculo_terrestre
+        (altura_maxima, tipo_tracao, id) 
+    values
+        (?, ?, ?)
+2026-06-05T22:30:57.226-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_veiculo
+Hibernate: 
+    select
+        next value for seq_orbit_veiculo
+2026-06-05T22:30:57.226-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_veiculo
+        (ativo, autonomia_km, capacidade_carga, modelo, nivel_combustivel, nome, tipo, dtype, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'AEREO', ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_veiculo
+        (ativo, autonomia_km, capacidade_carga, modelo, nivel_combustivel, nome, tipo, dtype, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'AEREO', ?)
+2026-06-05T22:30:57.226-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_veiculo_aereo
+        (alcance_vertical, capacidade_passageiros, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_veiculo_aereo
+        (alcance_vertical, capacidade_passageiros, id) 
+    values
+        (?, ?, ?)
+2026-06-05T22:30:57.227-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_ponto
+Hibernate: 
+    select
+        next value for seq_orbit_ponto
+2026-06-05T22:30:57.231-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_ponto_apoio
+        (ativo, capacidade_atendimento, latitude, longitude, descricao, nome, tipo, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_ponto_apoio
+        (ativo, capacidade_atendimento, latitude, longitude, descricao, nome, tipo, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.240-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        pda1_0.id,
+        pda1_0.ativo,
+        pda1_0.capacidade_atendimento,
+        pda1_0.latitude,
+        pda1_0.longitude,
+        pda1_0.descricao,
+        pda1_0.nome,
+        pda1_0.tipo,
+        r1_0.ponto_apoio_id,
+        r1_0.id,
+        r1_0.descricao,
+        r1_0.nome,
+        r1_0.quantidade,
+        r1_0.tipo,
+        r1_0.unidade 
+    from
+        tb_orbit_ponto_apoio pda1_0 
+    left join
+        tb_orbit_recurso r1_0 
+            on pda1_0.id=r1_0.ponto_apoio_id 
+    where
+        pda1_0.id=?
+Hibernate: 
+    select
+        pda1_0.id,
+        pda1_0.ativo,
+        pda1_0.capacidade_atendimento,
+        pda1_0.latitude,
+        pda1_0.longitude,
+        pda1_0.descricao,
+        pda1_0.nome,
+        pda1_0.tipo,
+        r1_0.ponto_apoio_id,
+        r1_0.id,
+        r1_0.descricao,
+        r1_0.nome,
+        r1_0.quantidade,
+        r1_0.tipo,
+        r1_0.unidade 
+    from
+        tb_orbit_ponto_apoio pda1_0 
+    left join
+        tb_orbit_recurso r1_0 
+            on pda1_0.id=r1_0.ponto_apoio_id 
+    where
+        pda1_0.id=?
+2026-06-05T22:30:57.244-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_recurso
+Hibernate: 
+    select
+        next value for seq_orbit_recurso
+2026-06-05T22:30:57.244-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_recurso
+Hibernate: 
+    select
+        next value for seq_orbit_recurso
+2026-06-05T22:30:57.245-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_recurso
+        (descricao, nome, ponto_apoio_id, quantidade, tipo, unidade, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_recurso
+        (descricao, nome, ponto_apoio_id, quantidade, tipo, unidade, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.245-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_recurso
+        (descricao, nome, ponto_apoio_id, quantidade, tipo, unidade, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_recurso
+        (descricao, nome, ponto_apoio_id, quantidade, tipo, unidade, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.246-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_ponto
+Hibernate: 
+    select
+        next value for seq_orbit_ponto
+2026-06-05T22:30:57.247-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_ponto_apoio
+        (ativo, capacidade_atendimento, latitude, longitude, descricao, nome, tipo, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_ponto_apoio
+        (ativo, capacidade_atendimento, latitude, longitude, descricao, nome, tipo, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.247-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        pda1_0.id,
+        pda1_0.ativo,
+        pda1_0.capacidade_atendimento,
+        pda1_0.latitude,
+        pda1_0.longitude,
+        pda1_0.descricao,
+        pda1_0.nome,
+        pda1_0.tipo,
+        r1_0.ponto_apoio_id,
+        r1_0.id,
+        r1_0.descricao,
+        r1_0.nome,
+        r1_0.quantidade,
+        r1_0.tipo,
+        r1_0.unidade 
+    from
+        tb_orbit_ponto_apoio pda1_0 
+    left join
+        tb_orbit_recurso r1_0 
+            on pda1_0.id=r1_0.ponto_apoio_id 
+    where
+        pda1_0.id=?
+Hibernate: 
+    select
+        pda1_0.id,
+        pda1_0.ativo,
+        pda1_0.capacidade_atendimento,
+        pda1_0.latitude,
+        pda1_0.longitude,
+        pda1_0.descricao,
+        pda1_0.nome,
+        pda1_0.tipo,
+        r1_0.ponto_apoio_id,
+        r1_0.id,
+        r1_0.descricao,
+        r1_0.nome,
+        r1_0.quantidade,
+        r1_0.tipo,
+        r1_0.unidade 
+    from
+        tb_orbit_ponto_apoio pda1_0 
+    left join
+        tb_orbit_recurso r1_0 
+            on pda1_0.id=r1_0.ponto_apoio_id 
+    where
+        pda1_0.id=?
+2026-06-05T22:30:57.247-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_recurso
+Hibernate: 
+    select
+        next value for seq_orbit_recurso
+2026-06-05T22:30:57.248-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_recurso
+        (descricao, nome, ponto_apoio_id, quantidade, tipo, unidade, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_recurso
+        (descricao, nome, ponto_apoio_id, quantidade, tipo, unidade, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.248-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_ponto
+Hibernate: 
+    select
+        next value for seq_orbit_ponto
+2026-06-05T22:30:57.248-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_ponto_apoio
+        (ativo, capacidade_atendimento, latitude, longitude, descricao, nome, tipo, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_ponto_apoio
+        (ativo, capacidade_atendimento, latitude, longitude, descricao, nome, tipo, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.249-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        pda1_0.id,
+        pda1_0.ativo,
+        pda1_0.capacidade_atendimento,
+        pda1_0.latitude,
+        pda1_0.longitude,
+        pda1_0.descricao,
+        pda1_0.nome,
+        pda1_0.tipo,
+        r1_0.ponto_apoio_id,
+        r1_0.id,
+        r1_0.descricao,
+        r1_0.nome,
+        r1_0.quantidade,
+        r1_0.tipo,
+        r1_0.unidade 
+    from
+        tb_orbit_ponto_apoio pda1_0 
+    left join
+        tb_orbit_recurso r1_0 
+            on pda1_0.id=r1_0.ponto_apoio_id 
+    where
+        pda1_0.id=?
+Hibernate: 
+    select
+        pda1_0.id,
+        pda1_0.ativo,
+        pda1_0.capacidade_atendimento,
+        pda1_0.latitude,
+        pda1_0.longitude,
+        pda1_0.descricao,
+        pda1_0.nome,
+        pda1_0.tipo,
+        r1_0.ponto_apoio_id,
+        r1_0.id,
+        r1_0.descricao,
+        r1_0.nome,
+        r1_0.quantidade,
+        r1_0.tipo,
+        r1_0.unidade 
+    from
+        tb_orbit_ponto_apoio pda1_0 
+    left join
+        tb_orbit_recurso r1_0 
+            on pda1_0.id=r1_0.ponto_apoio_id 
+    where
+        pda1_0.id=?
+2026-06-05T22:30:57.249-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_recurso
+Hibernate: 
+    select
+        next value for seq_orbit_recurso
+2026-06-05T22:30:57.250-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_recurso
+        (descricao, nome, ponto_apoio_id, quantidade, tipo, unidade, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_recurso
+        (descricao, nome, ponto_apoio_id, quantidade, tipo, unidade, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.250-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_missao
+Hibernate: 
+    select
+        next value for seq_orbit_missao
+2026-06-05T22:30:57.251-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_missao
+        (data_fim, data_inicio, descricao, nivel_risco, origem_latitude, origem_longitude, status, titulo, veiculo_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_missao
+        (data_fim, data_inicio, descricao, nivel_risco, origem_latitude, origem_longitude, status, titulo, veiculo_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.252-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_pessoa
+Hibernate: 
+    select
+        next value for seq_orbit_pessoa
+2026-06-05T22:30:57.253-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_pessoa
+        (funcao, matricula, missao_id, nivel_condicao_fisica, nivel_habilidade, nome, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_pessoa
+        (funcao, matricula, missao_id, nivel_condicao_fisica, nivel_habilidade, nome, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.253-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_pessoa
+Hibernate: 
+    select
+        next value for seq_orbit_pessoa
+2026-06-05T22:30:57.253-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_pessoa
+        (funcao, matricula, missao_id, nivel_condicao_fisica, nivel_habilidade, nome, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_pessoa
+        (funcao, matricula, missao_id, nivel_condicao_fisica, nivel_habilidade, nome, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.254-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        next value for seq_orbit_missao
+Hibernate: 
+    select
+        next value for seq_orbit_missao
+2026-06-05T22:30:57.254-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        tb_orbit_missao
+        (data_fim, data_inicio, descricao, nivel_risco, origem_latitude, origem_longitude, status, titulo, veiculo_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        tb_orbit_missao
+        (data_fim, data_inicio, descricao, nivel_risco, origem_latitude, origem_longitude, status, titulo, veiculo_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-06-05T22:30:57.254-03:00  INFO 89443 --- [           main] br.com.fiap.orbit.DataInitializer        : Dados de exemplo carregados com sucesso. Acesse /swagger-ui.html para explorar a API.
+2026-06-05T22:30:57.497-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        m1_0.id,
+        m1_0.data_fim,
+        m1_0.data_inicio,
+        m1_0.descricao,
+        m1_0.nivel_risco,
+        m1_0.origem_latitude,
+        m1_0.origem_longitude,
+        m1_0.status,
+        m1_0.titulo,
+        m1_0.veiculo_id 
+    from
+        tb_orbit_missao m1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.data_fim,
+        m1_0.data_inicio,
+        m1_0.descricao,
+        m1_0.nivel_risco,
+        m1_0.origem_latitude,
+        m1_0.origem_longitude,
+        m1_0.status,
+        m1_0.titulo,
+        m1_0.veiculo_id 
+    from
+        tb_orbit_missao m1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-06-05T22:30:57.501-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.dtype,
+        v1_0.ativo,
+        v1_0.autonomia_km,
+        v1_0.capacidade_carga,
+        v1_0.modelo,
+        v1_0.nivel_combustivel,
+        v1_0.nome,
+        v1_0.tipo,
+        v1_1.alcance_vertical,
+        v1_1.capacidade_passageiros,
+        v1_2.altura_maxima,
+        v1_2.tipo_tracao 
+    from
+        tb_orbit_veiculo v1_0 
+    left join
+        tb_orbit_veiculo_aereo v1_1 
+            on v1_0.id=v1_1.id 
+    left join
+        tb_orbit_veiculo_terrestre v1_2 
+            on v1_0.id=v1_2.id 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.dtype,
+        v1_0.ativo,
+        v1_0.autonomia_km,
+        v1_0.capacidade_carga,
+        v1_0.modelo,
+        v1_0.nivel_combustivel,
+        v1_0.nome,
+        v1_0.tipo,
+        v1_1.alcance_vertical,
+        v1_1.capacidade_passageiros,
+        v1_2.altura_maxima,
+        v1_2.tipo_tracao 
+    from
+        tb_orbit_veiculo v1_0 
+    left join
+        tb_orbit_veiculo_aereo v1_1 
+            on v1_0.id=v1_1.id 
+    left join
+        tb_orbit_veiculo_terrestre v1_2 
+            on v1_0.id=v1_2.id 
+    where
+        v1_0.id=?
+2026-06-05T22:30:57.502-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.missao_id,
+        p1_0.id,
+        p1_0.funcao,
+        p1_0.matricula,
+        p1_0.nivel_condicao_fisica,
+        p1_0.nivel_habilidade,
+        p1_0.nome 
+    from
+        tb_orbit_pessoa p1_0 
+    where
+        p1_0.missao_id=?
+Hibernate: 
+    select
+        p1_0.missao_id,
+        p1_0.id,
+        p1_0.funcao,
+        p1_0.matricula,
+        p1_0.nivel_condicao_fisica,
+        p1_0.nivel_habilidade,
+        p1_0.nome 
+    from
+        tb_orbit_pessoa p1_0 
+    where
+        p1_0.missao_id=?
+2026-06-05T22:30:57.503-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        v1_0.dtype,
+        v1_0.ativo,
+        v1_0.autonomia_km,
+        v1_0.capacidade_carga,
+        v1_0.modelo,
+        v1_0.nivel_combustivel,
+        v1_0.nome,
+        v1_0.tipo,
+        v1_1.alcance_vertical,
+        v1_1.capacidade_passageiros,
+        v1_2.altura_maxima,
+        v1_2.tipo_tracao 
+    from
+        tb_orbit_veiculo v1_0 
+    left join
+        tb_orbit_veiculo_aereo v1_1 
+            on v1_0.id=v1_1.id 
+    left join
+        tb_orbit_veiculo_terrestre v1_2 
+            on v1_0.id=v1_2.id 
+    where
+        v1_0.id=?
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.dtype,
+        v1_0.ativo,
+        v1_0.autonomia_km,
+        v1_0.capacidade_carga,
+        v1_0.modelo,
+        v1_0.nivel_combustivel,
+        v1_0.nome,
+        v1_0.tipo,
+        v1_1.alcance_vertical,
+        v1_1.capacidade_passageiros,
+        v1_2.altura_maxima,
+        v1_2.tipo_tracao 
+    from
+        tb_orbit_veiculo v1_0 
+    left join
+        tb_orbit_veiculo_aereo v1_1 
+            on v1_0.id=v1_1.id 
+    left join
+        tb_orbit_veiculo_terrestre v1_2 
+            on v1_0.id=v1_2.id 
+    where
+        v1_0.id=?
+2026-06-05T22:30:57.503-03:00 DEBUG 89443 --- [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.missao_id,
+        p1_0.id,
+        p1_0.funcao,
+        p1_0.matricula,
+        p1_0.nivel_condicao_fisica,
+        p1_0.nivel_habilidade,
+        p1_0.nome 
+    from
+        tb_orbit_pessoa p1_0 
+    where
+        p1_0.missao_id=?
+Hibernate: 
+    select
+        p1_0.missao_id,
+        p1_0.id,
+        p1_0.funcao,
+        p1_0.matricula,
+        p1_0.nivel_condicao_fisica,
+        p1_0.nivel_habilidade,
+        p1_0.nome 
+    from
+        tb_orbit_pessoa p1_0 
+    where
+        p1_0.missao_id=?
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/riquezada/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="contextLoads" classname="br.com.fiap.orbit.OrbitApplicationTests" time="0.001"/>
+</testsuite>
