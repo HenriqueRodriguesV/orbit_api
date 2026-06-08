@@ -27,7 +27,7 @@ Quando uma missão entra em estado crítico, o sistema analisa:
 - Distância até cada ponto de apoio disponível (cálculo com **fórmula de Haversine**)
 - Recursos disponíveis no ponto (combustível, medicina, suprimentos, energia)
 - Nível de risco da rota
-- Condição física média dos operadores
+- Condição física média dos operadores  
 
 E retorna uma lista **rankeada com justificativa** de qual ponto de apoio deve ser acionado primeiro, usando um **algoritmo de score ponderado**.
 
@@ -108,6 +108,7 @@ java -jar target/orbit-api-1.0.0.jar
 
 rm562917@fiap.com.br
 orbit2026
+
 > Todos os demais endpoints requerem o header: `Authorization: Bearer <token>`
 
 ### Missões
@@ -237,3 +238,7 @@ orbit-api/src/main/java/br/com/fiap/orbit/
 ```
 
 ## LINK RENDER https://orbit-api-uo91.onrender.com/swagger-ui/index.html OU https://orbit-api-uo91.onrender.com
+
+## github https://github.com/HenriqueRodriguesV/orbit_api/tree/main/orbit-api
+
+## video yt https://youtu.be/_kELwq2UnOU
