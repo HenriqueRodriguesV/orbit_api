@@ -70,7 +70,7 @@ E retorna uma lista **rankeada com justificativa** de qual ponto de apoio deve s
 
 ```bash
 # Clonar e entrar no projeto
-cd orbit-api
+cd /Users/riquezada/Desktop/OBITS/orbit-api
 
 # Compilar e rodar com H2 em memória
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
@@ -99,8 +99,6 @@ java -jar target/orbit-api-1.0.0.jar
 
 ---
 
-## Endpoints
-
 ### Autenticação
 
 | Método | Endpoint | Descrição |
@@ -108,6 +106,8 @@ java -jar target/orbit-api-1.0.0.jar
 | POST | `/api/auth/registrar` | Registrar novo usuário |
 | POST | `/api/auth/login` | Login e obtenção do JWT |
 
+rm562917@fiap.com.br
+orbit2026
 > Todos os demais endpoints requerem o header: `Authorization: Bearer <token>`
 
 ### Missões
@@ -235,3 +235,5 @@ orbit-api/src/main/java/br/com/fiap/orbit/
     ├── RecursoService.java
     └── RecomendacaoService.java
 ```
+
+## LINK RENDER https://orbit-api-uo91.onrender.com/swagger-ui/index.html OU https://orbit-api-uo91.onrender.com
